@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-dream-app": {
+    "trainingapp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/trainingApp",
+            "outputPath": "dist/training-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -58,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "my-dream-app:build:production"
+              "buildTarget": "trainingapp:build:production"
             },
             "development": {
-              "buildTarget": "my-dream-app:build:development"
+              "buildTarget": "trainingapp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "my-dream-app:build"
+            "buildTarget": "trainingapp:build"
           }
         },
         "test": {
